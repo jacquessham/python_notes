@@ -4,6 +4,16 @@ Coming soon...
 ## Basic Syntax
 Coming soon...
 
+### List Syntax
+```
+list1 = [1,2,3,4]
+
+# One line Filtering
+list2 = [num for num in list1 if num%==1]
+list2 = [num if num%2 else None for num in list1]
+
+```
+
 ## Environment
 Coming soon...
 <br><br>
