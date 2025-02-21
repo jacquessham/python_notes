@@ -9,8 +9,12 @@ Coming soon...
 list1 = [1,2,3,4]
 
 # One line Filtering
-list2 = [num for num in list1 if num%==1]
-list2 = [num if num%2 else None for num in list1]
+list2 = [num for num in list1 if num%==1 else] # If only
+list2 = [num if num%2 else None for num in list1] # If-else
+
+# Replace element in place
+nums = [1,2,2,3,4]
+nums[:] = sorted(set(nums)) # [1,2,3,4,_]
 
 ```
 
