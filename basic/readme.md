@@ -42,3 +42,33 @@ To deactivate the virtual environment:
 ```
 deactivate
 ```
+
+## Collections
+### Counter
+Counter accepts a list or a string
+```
+lst1 = Counter([1,2,2,3,4,5,6,6,6]) # Counter({6:3, 2:2, 1:1, 3:1, 4:1, 5:1})
+str1 = Counter('bell') # Counter({'l':2, 'b':1, 'e':1})
+```
+
+<br>
+Accessing counter like dictionary:
+
+```
+lst1[6] => 3 # k=6 , v=3
+```
+
+<br>
+Updating counter means adding more elements to the object:
+
+```
+lst1.update([1,1,1]) # Becomes -> Counter({6:3, 2:2, 1:4, 3:1, 4:1, 5:1})
+```
+
+<br>
+most_common() is the most useful method: It sort the elements by the most frequency to the least, and return a list of (key, frequency) tuples.
+
+```
+print(lst1.most_common(1)) => [(1, 4)]
+print(lst1.most_common()) => [(1, 4), (6, 3), (2, 2), (3, 1), (4, 1), (5, 1)]
+```
