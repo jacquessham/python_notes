@@ -43,6 +43,31 @@ To deactivate the virtual environment:
 deactivate
 ```
 
+## datetime
+
+```
+from datetime import datetime
+
+# Declare datetime object - year, month, day, hour, minute, second
+a = datetime(2024,1,5,10,00,00)
+b = datetime(2024,1,10,12,30,00)
+c = datetime.now()
+
+difference = b - a
+
+difference # Output: 5 Days, 2:30:00
+
+# To obtain only the day portion
+difference.days
+
+# To obtain only the second portion
+difference.seconds
+
+# To obtain the difference in total seconds
+difference.total_seconds()
+
+```
+
 ## Collections
 ### Counter
 Counter accepts a list or a string
